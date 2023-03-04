@@ -1,0 +1,43 @@
+Escreva um método tendo como protótipo a seguinte interface (exatamente essa):
+
+public static void pulaValor (int[] numeros, int pulos);
+
+Este método deve receber um vetor de inteiros como primeiro atributo denominado números e um valor inteiro como segundo atributo denominado pulos.
+O vetor numeros deve ser modificado da seguinte maneira:
+Todos os valores dos inteiros do vetor numeros em cada índice devem "pular" de seus respectivos índices para a o índice da direita (no sentido do maior índice) a quantidade de vezes indicada pelo valor inteiro pulos. Se o valor de pulos for negativo, os valores do vetor devem ser pulados cada um de seu respectivo índice para o índice da esquerda (no sentido do menor índice) a quantidade de vezes indicada pelo valor absoluto do inteiro pulos. Os valores que atingirem o final do vetor, devem entrar pelo ínicio do vetor quando pulados para a direita. Da mesma forma, os valores que atingirem o início do vetor, devem entrar pelo final do vetor quando pulados para a esquerda.
+
+Exemplos:
+
+Exemplo 1 (pulando 3 vezes para a direita):
+
+Entrada:
+numeros = {1, 2, 3, 4, 5}
+pulos = 3
+
+Saída
+numeros = { 3, 4, 5, 1, 2}
+
+
+Exemplo 2 (pulando duas vezes para a esquerda):
+
+Entrada:
+numeros = {1, 2, 3, 4, 5}
+pulos = -2
+
+Saída:
+numeros = {3, 4, 5, 1, 2}
+
+
+Regras
+
+O vetor números pode ter de 1 a 2.000.000.000 posições
+O vetor de números pode conter inteiros de valores entre -2.000.000.000 e 2.000.000.000
+O vetor de números pode não estar necessariamente ordenado.
+O vetor de numeros pode conter números repetidos.
+O inteiro pulos pode ser qualquer número inteiro entre -2.000.000.000 e 2.000.000.000
+
+Obs 1:
+Você deve tentar fazer o algoritmo mais performático possível, ou seja, que execute a tarefa no menor tempo possível.
+
+Obs 2:
+Seu algoritmo não precisa, necessariamente, realizar todos os "pulos" solicitados, mas deve oferecer uma saída que seja consistente com a situação final esperada.
