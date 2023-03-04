@@ -1,2 +1,2 @@
 # desafio_pular_valores
- pular vlores com linguam JAVA
+ pular valores com linguagem JAVA
